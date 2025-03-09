@@ -1,0 +1,17 @@
+version: "3.0"
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+- intent: ask_support
+  examples: |
+    - I need help with my order
+    - My product is not working
+    - I have a problem with my account

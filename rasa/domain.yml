@@ -1,0 +1,22 @@
+version: "3.0"
+intents:
+  - greet
+  - goodbye
+  - ask_support
+  - fallback
+entities:
+  - data_source
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+  utter_goodbye:
+    - text: "Goodbye! Have a nice day!"
+  utter_ask_support:
+    - text: "How can I help you with your issue?"
+  utter_default:
+    - text: "I'm sorry, I didn't understand that. Could you please rephrase?"
+actions:
+  - action_run_workflow
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
